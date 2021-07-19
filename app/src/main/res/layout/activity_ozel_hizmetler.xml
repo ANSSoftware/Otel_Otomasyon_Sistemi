@@ -4,6 +4,145 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgraund"
     tools:context=".ozelHizmetler">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/goodtimingbd"
+        android:text="@string/ozel_hizmetler"
+        android:textColor="@color/sari"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <Spinner
+        android:id="@+id/odaServisiSpinner"
+        android:layout_width="299dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/editarkaplantext"
+        app:layout_constraintBottom_toTopOf="@+id/oda_servisi_adedi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/okutmaBekleniyor"
+        app:layout_constraintVertical_bias="0.653" />
+
+    <TextView
+        android:id="@+id/fiyatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/coolveticarg"
+        android:text="Tutar: 00TL"
+        android:textColor="@color/sari"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.968" />
+
+
+    <EditText
+        android:id="@+id/oda_servisi_adedi"
+        android:layout_width="186dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/editarkaplantext"
+        android:ems="10"
+        android:fontFamily="@font/coolveticarg"
+        android:hint="Saati Giriniz"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/fiyatText"
+        app:layout_constraintEnd_toStartOf="@+id/tutari_onayla"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/oda_servisi_satisi_tamamla"
+        android:layout_width="285dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonarkaplan"
+        android:fontFamily="@font/coolveticarg"
+        android:onClick="onClickOdaServisiSatisiTamamla"
+        android:text="SATIŞI TAMAMLA"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fiyatText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/tutari_onayla"
+        android:layout_width="152dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonarkaplan"
+        android:fontFamily="@font/coolveticarg"
+        android:onClick="onClickTutariOnayla"
+        android:text="TUTARI ONAYLA"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/oda_servisi_adedi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/oda_servisi_adedi"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/coolveticarg"
+        android:text="NFC ETİKETİNİ CİHAZA OKUTUNUZ"
+        android:textColor="@color/sari"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <TextView
+        android:id="@+id/okutmaBekleniyor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/coolveticarg"
+        android:text="OKUTMA BEKLENİYOR"
+        android:textColor="@color/sari"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nfc_image"
+        android:layout_width="302dp"
+        android:layout_height="188dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/okutmaBekleniyor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/nfcimage" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
