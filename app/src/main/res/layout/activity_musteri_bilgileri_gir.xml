@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgraund"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".musteriBilgileriGir">
+
+    <Button
+        android:id="@+id/buton_musteriyi_sisteme_kaydet"
+        android:layout_width="338dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonarkaplan"
+        android:fontFamily="@font/coolveticarg"
+        android:gravity="center"
+        android:onClick="onClickMusteriyiSistemeKaydet"
+        android:text="@string/musteriyi_sisteme_kaydet"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/goodtimingbd"
+        android:gravity="center_horizontal"
+        android:text="@string/musteri_bilgilerini_gir"
+        android:textColor="@color/sari"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <EditText
+        android:id="@+id/musteri_adi"
+        android:layout_width="299dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editarkaplantext"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:ems="10"
+        android:fontFamily="@font/coolveticarg"
+        android:hint="Adı"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/musteri_soyadi"
+        android:layout_width="299dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editarkaplantext"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:fontFamily="@font/coolveticarg"
+        android:hint="Soyadı"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musteri_adi" />
+
+    <EditText
+        android:id="@+id/musteri_tc"
+        android:layout_width="299dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editarkaplantext"
+        android:drawableLeft="@drawable/ic_baseline_3p_24"
+        android:ems="10"
+        android:fontFamily="@font/coolveticarg"
+        android:hint="TC Kimlik Numarası"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musteri_soyadi" />
+
+    <EditText
+        android:id="@+id/musteri_telefon"
+        android:layout_width="299dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editarkaplantext"
+        android:drawableLeft="@drawable/ic_baseline_4g_mobiledata_24"
+        android:ems="10"
+        android:fontFamily="@font/coolveticarg"
+        android:hint="Telefon Numarası"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musteri_tc" />
+
+    <EditText
+        android:id="@+id/musteri_adresi"
+        android:layout_width="299dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editarkaplantext"
+        android:drawableLeft="@drawable/ic_baseline_home_24"
+        android:ems="10"
+        android:fontFamily="@font/coolveticarg"
+        android:hint="Ev Adresi"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musteri_telefon" />
+
+    <EditText
+        android:id="@+id/musteri_eposta"
+        android:layout_width="299dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editarkaplantext"
+        android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+        android:ems="10"
+        android:fontFamily="@font/coolveticarg"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musteri_adresi" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

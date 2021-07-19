@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Otel Otomasyon Sistemi</string>
+    <string name="sirket_name">ANS HOTEL</string>
+    <string name="musteri_islemleri">MÜŞTERİ İŞLEMLERİ</string>
+    <string name="bakiye_yukle">BAKİYE YÜKLE</string>
+    <string name="satis_islemleri">SATIŞ İŞLEMLERİ</string>
+    <string name="yeni_musteri_ekle">YENİ MÜŞTERİ EKLE</string>
+    <string name="musteri_kaydi_sil">MÜŞTERİ KAYDI SİL</string>
+    <string name="musteri_bilgilerini_gir">MÜŞTERİ BİLGİLERİNİ GİR</string>
+    <string name="musteriyi_sisteme_kaydet">MÜŞTERİYİ SİSTEME KAYDET</string>
+    <string name="oda_servisi">ODA SERVİSİ</string>
+    <string name="ozel_hizmetler">ÖZEL HİZMETLER</string>
+    <string name="oyun_alanlari">OYUN ALANLARI</string>
+
+
+</resources>

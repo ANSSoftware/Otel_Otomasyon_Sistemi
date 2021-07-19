@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgraund"
+    tools:context=".musteriKaydiSil">
+
+    <Button
+        android:id="@+id/musteri_bilgileri_gir"
+        android:layout_width="282dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/buttonarkaplan"
+        android:fontFamily="@font/coolveticarg"
+        android:onClick="onClickMusteriKaydiSil"
+        android:text="@string/musteri_kaydi_sil"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/goodtimingbd"
+        android:text="@string/musteri_kaydi_sil"
+        android:textColor="@color/sari"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/coolveticarg"
+        android:text="NFC ETİKETİNİ CİHAZA OKUTUNUZ"
+        android:textColor="@color/sari"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/okutmaBekleniyor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/coolveticarg"
+        android:text="OKUTMA BEKLENİYOR"
+        android:textColor="@color/sari"
+        android:textSize="25dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612" />
+
+    <ImageView
+        android:id="@+id/nfc_image"
+        android:layout_width="302dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="146dp"
+        app:layout_constraintBottom_toTopOf="@+id/okutmaBekleniyor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.302"
+        app:srcCompat="@drawable/nfcimage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

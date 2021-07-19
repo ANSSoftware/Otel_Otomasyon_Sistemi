@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgraund"
+    tools:context=".musteriIslemleri">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/goodtimingbd"
+        android:gravity="center_horizontal"
+        android:text="@string/musteri_islemleri"
+        android:textColor="@color/sari"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/buton_yeni_musteri_ekle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <Button
+        android:id="@+id/buton_yeni_musteri_ekle"
+        android:layout_width="282dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/buttonarkaplan"
+        android:fontFamily="@font/coolveticarg"
+        android:onClick="onClickYeniMusteriEkle"
+        android:text="@string/yeni_musteri_ekle"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/buton_musteri_kaydi_sil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <Button
+        android:id="@+id/buton_musteri_kaydi_sil"
+        android:layout_width="282dp"
+        android:layout_height="74dp"
+        android:background="@drawable/buttonarkaplan"
+        android:fontFamily="@font/coolveticarg"
+        android:onClick="onClickMusteriKaydiSil"
+        android:text="@string/musteri_kaydi_sil"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

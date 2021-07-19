@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgraund"
+    tools:context=".satisIslemleri">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/goodtimingbd"
+        android:text="@string/satis_islemleri"
+        android:textColor="@color/sari"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <Button
+        android:id="@+id/buton_oda_servisi"
+        android:layout_width="282dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonarkaplan"
+        android:fontFamily="@font/coolveticarg"
+        android:onClick="onClickOdaServisi"
+        android:text="@string/oda_servisi"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/buton_ozel_hizmetler"
+        android:layout_width="282dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonarkaplan"
+        android:fontFamily="@font/coolveticarg"
+        android:onClick="onClickOzelHizmetler"
+        android:text="@string/ozel_hizmetler"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buton_oda_servisi" />
+
+    <Button
+        android:id="@+id/buton_oyun_alanlari"
+        android:layout_width="282dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonarkaplan"
+        android:fontFamily="@font/coolveticarg"
+        android:onClick="onClickOyunAlanlari"
+        android:text="@string/oyun_alanlari"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buton_ozel_hizmetler" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

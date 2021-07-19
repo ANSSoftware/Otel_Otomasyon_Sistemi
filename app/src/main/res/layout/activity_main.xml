@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgraund"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sicaklik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/goodtimingbd"
+        android:text="SICAKLIK 00°C"
+        android:textColor="@color/sari"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buton_satis_islemleri"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/goodtimingbd"
+        android:text="@string/sirket_name"
+        android:textColor="@color/sari"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/buton_musteri_islemleri"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buton_musteri_islemleri"
+        android:layout_width="282dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonarkaplan"
+        android:fontFamily="@font/coolveticarg"
+        android:onClick="onClickMusteriIslemleri"
+        android:text="@string/musteri_islemleri"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/buton_bakiye_yukle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buton_bakiye_yukle"
+        android:layout_width="282dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonarkaplan"
+        android:fontFamily="@font/coolveticarg"
+        android:onClick="onClickBakiyeYukle"
+        android:text="@string/bakiye_yukle"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/buton_satis_islemleri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buton_satis_islemleri"
+        android:layout_width="282dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/buttonarkaplan"
+        android:fontFamily="@font/coolveticarg"
+        android:onClick="onClickSatisIslemleri"
+        android:text="@string/satis_islemleri"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
